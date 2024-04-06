@@ -145,8 +145,8 @@ section{
 }
 
 .home .image img{
-    height: 40rem;
-    width: 40rem;
+    height: 35rem;
+    width: 35rem;
     border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ;
     object-fit: cover;
 }
