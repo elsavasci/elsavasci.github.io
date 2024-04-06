@@ -1,0 +1,387 @@
+/* Table of Contents
+----------------------------------
+
+0- Global CSS
+1- Heading CSS
+2- Button CSS
+3- Home Area CSS
+4- Stack Area CSS
+5- Contact Area CSS
+6- Footer Area CSS
+
+*/
+
+
+/*--------------------- 0- Global CSS (Start) ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --blue: #6C8CD5;
+    --black: #03191c;
+    --white: #F7F5F2;
+    --grey: #DFDFDE;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+  	        transition: all 0.2s linear;
+}
+
+*::selection{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background-color: var(--black);
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+/*--------------------- 0- Global CSS (End) ---------------------*/
+
+
+/*--------------------- 1- Heading CSS (Start) ---------------------*/
+.heading{
+    margin-bottom: 2rem;
+}
+
+.heading h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:var(--blue);
+    font-size: 4rem;
+}
+
+.heading h2 span{
+    position: relative;
+    z-index: 0;
+    color: var(--white);
+}
+
+.heading h2 span::before{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem; left: 0;
+    z-index: -1;
+    background: var(--blue);
+    height: 0.2rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*--------------------- 1- Heading CSS (End) ---------------------*/
+
+
+/*--------------------- 2- Button CSS (Start) ---------------------*/
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--blue);
+    background-color: transparent;
+    border: 0.2rem solid var(--blue);
+}
+
+.btn:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+/*--------------------- 2- Button CSS (End) ---------------------*/
+
+
+/*--------------------- 3- Home Area CSS (Start) ---------------------*/
+.home{
+    padding: 0rem 5%;
+    background-color: var(--black);
+    min-height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.home .box-container{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.home .image{
+    text-align: center;
+    -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+
+}
+
+.home .image img{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ;
+    object-fit: cover;
+}
+
+.home .content{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin-top: 7rem;
+}
+
+.home .content h1{
+    font-size: 8rem;
+    color: var(--white);
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.home .content h2{
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.home .content h3{
+    font-size: 3rem;  
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+    margin-top: 30px; /* Задаем отступ сверху в 20px */
+}
+
+.home .content .img{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.home .content .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding: 2rem 0;
+}
+
+.home .content .social img{
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+/*--------------------- 3- Home Area CSS (End) ---------------------*/
+
+
+/*--------------------- 4- Stack Area CSS (Start) ---------------------*/
+.stack .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.stack-item{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33rem;
+        flex: 1 1 33rem;
+    background-color: var(--black);
+    padding: 4rem 3rem;
+    text-align: left;
+    border: 0.1rem solid rgba(255,255, 255, 0.3);
+    border-radius: 1rem;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+    height: 23rem;
+}
+
+.stack-item:hover{
+    background-color: var(--blue);
+}
+
+
+.stack-item h3{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+.stack-item p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.stack-item .image img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+}
+
+.stack-item:hover p{
+    color: var(--white);
+}
+
+/*--------------------- 4- Stack Area CSS (End) ---------------------*/
+
+
+/*--------------------- 5- Contact Area CSS (Start) ---------------------*/
+.contacts .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.contacts-item{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33rem;
+        flex: 1 1 33rem;
+    background-color: var(--black);
+    padding: 4rem 3rem;
+    text-align: center;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+    height: 23rem;
+}
+
+.contacts-item h3{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+.contacts-item p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.contacts-item .image img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+}
+
+.contacts-item a{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--blue);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/*--------------------- 5- Contact Area CSS (End) ---------------------*/
+
+
+/*--------------------- 6- Footer Area CSS (Start) ---------------------*/
+footer{
+    background-color: var(--black);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.7rem;
+}
+
+footer .content img{
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+}
+
+hr {
+    border: 0; /* Удаляем стандартные границы */
+    height: 0.05rem; /* Задаем высоту линии */
+    background-color: rgba(255,255, 255, 0.3); /* Задаем цвет линии */
+    margin: 2rem 0; /* Задаем внешние отступы */
+}
+
+/*--------------------- 6- Footer Area CSS (End) ---------------------*/
+
+
+
